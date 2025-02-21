@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centralização vertical</title>
+    <style>
+        #fora{
+            width: 400px;
+            height: 400px;
+            background-color: lightgreen;
+            position: relative;
+            background-image: url('Assets/target001.png');
+            background-position: center center;
+            background-size: 100% 100%;
+        }
+        #dentro{
+            width: 200px;
+            height: 200px;
+            background-color: lightblue;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<body>
+    <div id="fora">
+        <div id="dentro">
+
+        </div>
+    </div>
+</body>
+</html>
