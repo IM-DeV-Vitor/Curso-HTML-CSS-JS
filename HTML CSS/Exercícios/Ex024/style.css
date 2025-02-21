@@ -1,0 +1,39 @@
+body {
+    background-image: url('Assets/wallpaper001.jpg');
+}
+
+
+div.quadrado {
+    display: inline-block;
+    border: 2px solid black;
+    width: 400px;
+    height: 400px;
+    border-radius: 10px;
+    background-color: gray;
+    transition-duration: 0.5s;
+}
+
+div.quadrado:hover {
+    padding: 5px;
+}
+
+div#q1 {
+    background-color: skyblue;
+}
+
+div#q2 {
+    background-image: linear-gradient(to bottom, lightgreen, green);
+    transition-duration: 0.3s;
+}
+
+div#q3 {
+    background-image: url('Assets/pattern003.png');
+}
+
+div#q1:hover {
+    background-color: blue;
+}
+
+div#q2:hover { 
+    background-image: linear-gradient(to bottom, green, lightgreen);
+}
