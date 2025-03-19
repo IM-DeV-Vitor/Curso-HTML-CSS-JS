@@ -33,11 +33,13 @@ form {
 input {
     display: block;
     margin: 0 auto;
+    padding: 15px;
     width: 360px;
     border: none;
     border-radius: 10px;
     margin-top: 10px;
     transition-duration: 0.5s;
+    text-align: center;
 }
 
 input:hover {

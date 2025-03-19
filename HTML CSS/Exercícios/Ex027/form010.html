@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form action="cadastro.php" method="get">
+        <p>
+            <label for="ano">Em que ano você nasceu?</label>
+            <input type="number" name="ano" id="ano" required placeholder="Ano de nascimento" min="1900" oninput="calcular_idade()" maxlength="4">
+        </p>
+        <p>
+            <label for="idade">Neste ano você faz ou fez:</label>
+            <output name="idade" id="idade"> </output>
+        </p>
+        <p>
+            <input type="submit" value="Enviar" class="btn">
+            <input type="reset" value="Limpar" class="btn-limpar">
+        </p>
+    </form>
+    <script>
+        var hoje = new Date().getFullYear()
+        var input = document.getElementById("ano");
+        input.max = `${hoje}`;
+
+        function calcular_idade() {
+            var hoje = new Date().getFullYear();
+            var input = document.getElementById("ano");
+            var outidade = document.getElementById("idade")
+            var idade = hoje - input.value;
+
+            outidade.innerHTML = `${idade}`
+        }
+    </script>
+</body>
+</html>
