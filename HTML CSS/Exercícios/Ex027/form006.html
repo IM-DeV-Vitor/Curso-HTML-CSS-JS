@@ -1,0 +1,31 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Teste de Formulário</h1>
+    
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <p>
+            <label for="cor">Cor:</label>
+            <input type="color" name="cor" id="cor" value="#00FF00">
+        </p>
+        <p>
+            <label for="sats">Nível de satisfação</label>
+            <input type="range" name="sats" id="sats">
+        </p>
+        <p>
+            <label for="arq">Upload:</label>
+            <input type="file" name="arq" id="arq">
+        </p>
+        <p>
+            <input type="submit" value="Enviar" class="btn">
+            <input type="reset" value="Limpar" class="btn-limpar">
+        </p>
+        
+    </form>
+</body>
+</html>
