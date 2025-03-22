@@ -6,3 +6,12 @@ function click_menu(){
         menu.style.display = "block"
     }
 }
+
+function mudarTamanho() {
+    var menu = document.getElementById("items")
+    if (window.innerWidth <= 768) {
+        menu.style.display = "block"
+    } else {
+        menu.style.display = "none"
+    }
+}
